@@ -46,4 +46,18 @@ public class FizzBuzzTest {
         //Then
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void should_return_Whizz_when_count_off_input_7_is_given_(){
+        //Given
+        FizzBuzz fb = new FizzBuzz();
+        int input = 7;
+        String expected = "Whizz";
+
+        //When
+        String actual = fb.countOff(input);
+
+        //Then
+        assertEquals(expected, actual);
+    }
 }
